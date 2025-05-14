@@ -58,9 +58,9 @@ const sessionOptions = {
     },
 };
 
-// app.get("/",(req,res)=>{
-//     res.send("Hi, i am Anuj");
-// });
+app.get("/",(req,res)=>{
+    res.render("./listings/index.js");
+});
 
 
 
