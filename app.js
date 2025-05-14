@@ -58,9 +58,7 @@ const sessionOptions = {
     },
 };
 
-app.get("/",(req,res)=>{
-    res.render("./listings/index.js");
-});
+
 
 
 
@@ -112,7 +110,9 @@ app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);
 app.use("/",userRouter);
 
-
+app.get("/",(req,res)=>{
+    res.render("./listings/index.js");
+});
 
  
 app.use((err,req,res,next)=>{
